@@ -1,0 +1,10 @@
+version: '1'
+
+services:
+  database:
+    image: 'postgres:16.0-alpine3.18'
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 'local_password'
+    ports:
+      - 5432:5432
